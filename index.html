@@ -1,76 +1,359 @@
 <!DOCTYPE html>
 <html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperShop</title>
-</head>
-<body>
-    <header>
-        <section>
-            <ul>
-                <li>
-                    <a href="tel:+123456789">+1 2345 67 89</a>
-                </li>
-                <li>
-                    <label for="euro">€</label>
-                    <input type="radio" name="moneda" id="euro">
-                    <label for="pund">£</label>
-                    <input type="radio" name="moneda" id="pund">
-                    <label for="dolar">$</label>
-                    <input type="radio" name="moneda" id="dolar">
-                </li>
-                <li>English</li>
-            </ul>
-            <ul>
-                <li><a href="./My_Account">My Account</a></li>
-                <li><a href="./My_Wishlist">My Wishlist</a></li>
-                <li><a href="./Checkout">Checkout</a></li>
-                <li><a href="./login">Log in</a></li>
-            </ul>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SuperShop</title>
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <ul>
+                    <li>
+                        <a href="tel:+123456789">+1 2345 67 89</a>
+                    </li>
+                    <li>
+                        <label for="euro">€</label>
+                        <input type="radio" name="moneda" id="euro">
+                        <label for="pund">£</label>
+                        <input type="radio" name="moneda" id="pund">
+                        <label for="dolar">$</label>
+                        <input type="radio" name="moneda" id="dolar">
+                    </li>
+                    <li>English</li>
+                </ul>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </section>
+            <nav>
+                <ul>
+                    <img src="./src/supershop.svg" alt="SuperShop logo">
+                    <li><a href="#">WOMAN</a></li>
+                    <li><a href="#">MAN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li>
+                        <a href="#">NEW</a>
+                        <ul>
+                            <li>
+                                <a href="#">Hi Tops</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Running Shoes</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Jackets and Coats</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Tennis Clothing</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Running Closing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">CORPORATE</a></li>
+                    <li><a href="#">ONE PAGE</a></li>
+                    <li><a href="#">ADMIN THEME</a></li>
+                </ul>
+                <label for="buscador">🔍</label>
+                <input type="text" id="buscador">
+                <div class="carrito_compra">
+                    <div>
+                        <p>3 items</p>
+                        <p>$1260</p>
+                    </div>
+                    <a href="#">🛒</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <article class="img-carousel">
+                <img src="./src/carrusel/img-fondo-hero.png" alt="Chica con gafas apoyada en el coche mirando al cielo y chico al fondo con gafas y desenfocado">
+                <p>Tones of
+                    <span>Shop UI Features</span>
+                    designed
+                </p>
+                <p>Lorem ipsum dolor sit amet constectetuer diam adipiscing elit euismod ut laoreet dolore.</p>
+            </article>
+
+            <article class="new_arrivals">
+                <h1>NEW ARRIVALS</h1>
+                <div class="new_arrivals-nav">
+                    <p>&lt</p>
+                    <p>&gt</p>
+                </div>
+                <section>
+                    <img src="./src/clothes imgs/1.png" alt="BERRY LACE DRESS">
+                    <p>SALE</p>
+                    <p>ZOOM</p>
+                    <p>VIEW</p>
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/2.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/3.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/4.png" alt="BERRY LACE DRESS">
+                    <p>NEW</p>
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/5.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+            </article>
+
+            <aside>
+                <ul>
+                    <li><a href="#">LADIES</a></li>
+                    <li><a href="#">MENS</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">SPORTS</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="#">ELECTRONICS</a></li>
+                    <li><a href="#">HOME & GARDEN</a></li>
+                    <li><a href="#">CUSTOM LINK</a></li>
+                </ul>
+            </aside>
+            
+            <article class="three_items">
+                <h1>THREE ITEMS</h1>
+                <div class="three_items-nav">
+                    <p>&lt</p>
+                    <p>&gt</p>
+                </div>
+                <section>
+                    <img src="./src/clothes imgs/6.png" alt="BERRY LACE DRESS">
+                    <p>NEW</p>
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/7.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/8.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+            </article>
+
+            <article class="two_items">
+                <h1>TWO ITEMS</h1>
+                <div class="two_items-nav">
+                    <p>&lt</p>
+                    <p>&gt</p>
+                </div>
+                <section>
+                    <img src="./src/clothes imgs/2.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+                <section>
+                    <img src="./src/clothes imgs/7.png" alt="BERRY LACE DRESS">
+                    <p>BERRY LACE DRESS</p>
+                    <p>$47.00</p>
+                    <p>ADD TO CART</p>
+                </section>
+            </article>
+
+            <article class="shop_index_carousel">
+                <img src="./src/carrusel/9.png" alt="">
+                <!-- <img src="" alt="">
+                <img src="" alt=""> -->
+            </article>
+        </main>
+
+        <section class="brands">
+            <a href="https://www.canon.es/">
+                <img src="./src/brands/canon_logo.png" alt="CANON">
+            </a>
+
+            <a href="https://www.esprit.es/">
+                <img src="./src/brands/esprit-logo.jpg" alt="ESPRIT">
+            </a>
+
+            <a href="https://www.gap.es/">
+                <img src="./src/brands/gap_logo.png" alt="GAP">
+            </a>
+
+            <a href="https://www.next.es/es">
+                <img src="./src/brands/next logo.jpg" alt="NEXT">
+            </a>
+
+            <a href="https://eu.puma.com/es/es/home">
+                <img src="./src/brands/puma-logo.jpg" alt="PUMA">
+            </a>
+
+            <a href="https://www.zara.com/es/">
+                <img src="./src/brands/zara-logo.jpg" alt="ZARA">
+            </a>
         </section>
 
-        <nav>
-            <ul>
-                <img src="./src/supershop.svg" alt="SuperShop logo">
-                <li><a href="./woman">WOMAN</a></li>
-                <li><a href="./man">MAN</a></li>
-                <li><a href="./kids">KIDS</a></li>
-                <li>
-                    <label for="new">NEW</label>
-                    <select name="new_nav_list" id="new">
-                        <a href="https://google.es">
-                            <option value="Hi Tops">Hi Tops</option>
-                        </a>
-                        <a href="./runnin_shoes">
-                            <option value="Runnng Shoes">Running Shoes</option>
-                        </a>
-                        <a href="./jackets_and_coats">
-                            <option value="Jackets and Coats">Jackets and Coats</option>
-                        </a>
-                        <a href="./tennis_cloating">
-                            <option value="Tennis Clothing">Tennis Clothing</option>
-                        </a>
-                        <a href="./running_closing">
-                            <option value="Running Closing">Running Closing</option>
-                        </a>
-                    </select>
-                </li>
-                <li><a href="./pages">PAGES</a></li>
-                <li><a href="./corporate">CORPORATE</a></li>
-                <li><a href="./one_page">ONE PAGE</a></li>
-                <li><a href="./admin_theme">ADMIN THEME</a></li>
-            </ul>
-            <label for="buscador">🔍</label>
-            <!--🔍 Lupa y 🛒 Carrito sacados de (https://emojiterra.com/es/lupa-apuntando-izquierda/) -->
-            <input type="text" id="buscador">
-            <div class="carrito_compra">
-                <p>3 items</p>
-                <p>$1260</p>
-                <a href="./carrito">🛒</a>
+        <section class="steps_block">
+            <div>
+                <p>🚚</p>
+                <h2>FREE SHIPPING</h2>
+                <p>EXPRESS DELIVERY WITHING 3 DAYS</p>
             </div>
+            <p>&gt</p>
+            <div>
+                <p>🎁</p>
+                <h2>DAILY GIFTS</h2>
+                <p>3 GIFTS DAILY FOR LUCKY CUSTOMERS</p>
+            </div>
+            <p>&gt</p>
+            <div>
+                <p>📞</p>
+                <h2>477 505 8877</h2>
+                <p>24/7 CUSTOMER CARE AVAILABLE</p>
+            </div>
+        </section>
 
-        </nav>
-    </header>
-</body>
+        <footer>
+            <section class="about-us">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat. Nostrud exerci tation ullamcorper suscipit lobortis nisl aliquip commodo consequat.</p>
+                <p>Duis autem vel eum iriure dolor vulputate velit esse molestie at dolore.</p>
+            </section>
+
+            <section class="information">
+                <ul>
+                    <li>
+                        <a href="#">Delivery Information</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Customer Service</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Order Tracking</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Shipping & Returns</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Payment Methods</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="latest-tweets">
+                <h2>LATEST TWEETS</h2>
+                <!-- No encontré los tewwts de la imagen, así que en su lugar decidí tomar otros de su cuenta  -->
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let&#39;s connect on Linkedin :) <a href="https://t.co/sRNmw9aOlY">https://t.co/sRNmw9aOlY</a></p>&mdash; KeenThemes (@keenthemes) <a href="https://twitter.com/keenthemes/status/1579751624645697536?ref_src=twsrc%5Etfw">October 11, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let&#39;s connect on Linkedin :) <a href="https://t.co/sRNmw9aOlY">https://t.co/sRNmw9aOlY</a></p>&mdash; KeenThemes (@keenthemes) <a href="https://twitter.com/keenthemes/status/1579751624645697536?ref_src=twsrc%5Etfw">October 11, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </section>
+        
+            <section class="our-contacts">
+                <h2>OUR CONTACTS</h2>
+                <address>
+                25, Lorem Lis Street, Orange<br>
+                California, US<br>
+                Phone: 800 123 3456<br>
+                Fax: 800 123 3456<br>
+                Email: <a href="mailto:info@anybiz.com">info@anybiz.com</a><br>
+                Skype: <a href="skype:anybiz">anybiz</a>
+                </address>
+            </section>
+
+            <section class="social-media">
+                <a href="#">
+                    <img src="./src/social media/rss.png" alt="RSS">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/fb.png" alt="FACEBOOK">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/tw.png" alt="twitter">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/goglplus.png" alt="GOOGLE+">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/in.png" alt="LINKDIN">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/yt.png" alt="YOUTUBE">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/vimeo.png" alt="VIMEO">
+                </a>
+
+                <a href="#">
+                    <img src="./src/social media/skype.png" alt="SKYPE">
+                </a>
+            </section>
+
+            <section class="newslatter">
+                <h2>NEWSLATTER</h2>
+                <form action="#" method="POST">
+                    <input type="email" name="mail" id="mail-newslatter" placeholder="youremail@mail.com">
+                    <button type="submit">SUSCRIBE</button>
+                </form>
+                
+            </section>
+
+            <p>2014 © Metronic Shop UI. ALL Rights Reserved. </p>
+        
+            <section class="financial_institution">
+                <img src="./src/financial institution/western-union.jpg" alt="WESTERN UNION">
+                <img src="./src/financial institution/american-express.jpg" alt="AMERICAN EXPRESS">
+                <img src="./src/financial institution/mastercard.jpg" alt="MASTERCARD">
+                <img src="./src/financial institution/paypal.jpg" alt="PAYPAL">
+                <img src="./src/financial institution/visa.jpg" alt="VISA">
+            </section>
+        </footer>
+    </body>
 </html>
